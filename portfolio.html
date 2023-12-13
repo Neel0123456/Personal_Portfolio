@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/5a9906ac83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images\Logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web designer</p>
+                <h1>Hi ,i'm <span>Neel</span><br>desai from India</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ------------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images\user.png" class="responsive">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="font">Hello, I am Neel Desai.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web devlopment</span><br>Designin websites</li>
+                            <li><span>Machine Learning</span><br>Making projects of ML</li>
+                            <li><span>Python Library</span><br>Making projects with the help of python library</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>No experience</span><br>currently Studying</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.E. in Computer Engineering </span><br>Ldrp-Itr Gandhinagar</li>
+                            <li><span>HSC</span><br>JAV School from Himmatnagar </li>
+                            <li><span>SSC</span><br>Jav School from Himmatnagar</li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ------------------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list"> 
+            <div>
+                <i class="fa-solid fa-floppy-disk"></i>
+                <h2>Web devlopment</h2>
+                <p>This is my personal Portfolio.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i> 
+                <h2>ML projects</h2>
+                <p>I am interested in Ml and generally i do projects in Machine Learning.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python Project</h2>
+                <p>I have also some of the project on Python as well.</p>
+                <a href="#">Learn More</a>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<!-- -----------------Portfolio ----------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images\work-1.png">
+                <div class="layer">
+                    <h3>Grocerry Store management </h3>
+                    <p>This Website will manage the grocerry store.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images\work-2.png">
+                <div class="layer">
+                    <h3>E-Mail Spam Classifier</h3>
+                    <p>This Project classify weather E-mail is spam or not.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images\work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>This app connects you to the outside of the world,so download it and enjoy.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ----------------Contact-------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p> <i class="fa-sharp fa-solid fa-paper-plane"></i>neeldesai0412@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9499741855</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/neel_7990/?next=%2F"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/neel-desai-2508551b9/"target='_blank'><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Neel0123456"target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Neel Desai .pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your E-Mail" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © , Made <i class="fa-solid fa-heart"></i> By Neel Desai</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+
+</body>
+</html>
